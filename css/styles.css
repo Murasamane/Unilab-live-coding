@@ -32,6 +32,10 @@ html {
   padding: 2.4rem;
   font-size: 1.6rem;
 }
+
+.card__body:hover{
+  cursor: pointer;
+}
 .card__image {
   width: 20rem;
   max-width: 100%;
@@ -49,5 +53,4 @@ html {
   box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.75);
-  cursor: pointer;
 }
