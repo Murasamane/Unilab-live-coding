@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 const dataAraay = [
   {
     userId: 1,
@@ -58,7 +58,7 @@ const dataAraay = [
   },
 ];
 
-const section = document.querySelector('.cards')
+const section = document.querySelector(".cards");
 
 const cardTemplateBuilder = (obj) => {
   const htmlTemplate = `
@@ -80,22 +80,21 @@ const cardTemplateBuilder = (obj) => {
 </div>
 </div>
     `;
-    section.innerHTML+=htmlTemplate;
+  section.innerHTML += htmlTemplate;
 };
 
-const cardBuilder = arr =>{
-    arr.forEach(item => cardTemplateBuilder(item))
-}
+const cardBuilder = (arr) => {
+  arr.forEach((item) => cardTemplateBuilder(item));
+};
 
 cardBuilder(dataAraay);
 
-
-const cardClicks = () =>{
-    section.addEventListener('click',e=>{
-        if(e.target.classList.contains('card__body')){
-            e.target.classList.toggle('active')
-        }
-    })
-}
+const cardClicks = () => {
+  section.addEventListener("click", (e) => {
+    if (e.target.classList.contains("card__body")) {
+      e.target.classList.toggle("active");
+    }
+  });
+};
 
 cardClicks();
